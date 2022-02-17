@@ -15,6 +15,7 @@ jobs:
         image:
           - bdrmapit
           - chproxy
+          - clickhouse-aarch64
           - flashroute
           - ipv4-heatmap
     steps:
