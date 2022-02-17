@@ -1,0 +1,22 @@
+name: Docker
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        image:
+          - chproxy
+          - flashroute
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - uses: dioptra-io/publish-docker-action@v1.2
+        with:
+          context: ${{ matrix.image }}
+          file: ${{ matrix.image }}/Dockerfile
+          image: dioptra-io/docker-images/${{ matrix.image }}
+          password: ${{ secrets.GITHUB_TOKEN }}
