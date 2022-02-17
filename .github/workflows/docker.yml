@@ -8,6 +8,7 @@ jobs:
     strategy:
       matrix:
         image:
+          - bdrmapit
           - chproxy
           - flashroute
     steps:

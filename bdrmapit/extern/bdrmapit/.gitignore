@@ -1,0 +1,12 @@
+# c extensions
+*.so
+*.h
+*.html
+
+__pycache__
+build/
+dist
+*.ipynb
+.DS_Store
+.idea
+bdrmapit.egg-info

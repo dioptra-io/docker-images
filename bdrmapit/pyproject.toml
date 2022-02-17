@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bdrmapit"
+version = "0.1.0"
+description = ""
+authors = [""]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4"
+pandas = "^1.2.4"
+bdrmapit = { develop = true, path = "extern/bdrmapit" }
+ip2as = { develop = true, path = "extern/ip2as" }
+retrieve_external = { develop = true, path = "extern/retrieve_external" }
+traceutils = { develop = true, path = "extern/traceutils" }
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

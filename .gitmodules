@@ -4,3 +4,9 @@
 [submodule "chproxy/chproxy"]
 	path = chproxy/chproxy
 	url = https://github.com/maxmouchet/chproxy.git
+[submodule "bdrmapit/extern/retrieve_external"]
+	path = bdrmapit/extern/retrieve_external
+	url = https://github.com/alexmarder/retrieve_external.git
+[submodule "bdrmapit/extern/ip2as"]
+	path = bdrmapit/extern/ip2as
+	url = https://github.com/alexmarder/ip2as.git
