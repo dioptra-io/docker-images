@@ -10,3 +10,6 @@
 [submodule "bdrmapit/extern/ip2as"]
 	path = bdrmapit/extern/ip2as
 	url = https://github.com/alexmarder/ip2as.git
+[submodule "ipv4-heatmap/ipv4-heatmap"]
+	path = ipv4-heatmap/ipv4-heatmap
+	url = git@github.com:measurement-factory/ipv4-heatmap.git
