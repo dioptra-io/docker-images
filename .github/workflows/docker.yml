@@ -12,12 +12,17 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        image:
-          - bdrmapit
-          - chproxy
-          - clickhouse-aarch64
-          - flashroute
-          - ipv4-heatmap
+        include:
+          - image: "bdrmapit"
+            platforms: linux/amd64,linux/arm64
+          - image: "chproxy"
+            platforms: linux/amd64,linux/arm64
+          - image: "clickhouse-aarch64"
+            platforms: linux/amd64,linux/arm64
+          - image: "flashroute"
+            platforms: linux/amd64
+          - image: "ipv4-heatmap"
+            platforms: linux/amd64,linux/arm64
     steps:
       - uses: actions/checkout@v2
         with:
@@ -28,3 +33,4 @@ jobs:
           file: ${{ matrix.image }}/Dockerfile
           image: dioptra-io/docker-images/${{ matrix.image }}
           password: ${{ secrets.GITHUB_TOKEN }}
+          platforms: ${{ matrix.platforms }}
