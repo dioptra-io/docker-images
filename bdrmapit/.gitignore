@@ -173,14 +173,14 @@ Thumbs.db
 .prof
 
 # bdrmapit
-bgp/
-ixps/
-ribs/
-rirs/
-rels/
-peeringdb/
-annotations.db
-config.json
-ip2as.prefixes
-rir.files
-rir.prefixes
+./bgp/
+./ixps/
+./ribs/
+./rirs/
+./rels/
+./peeringdb/
+./annotations.db
+./config.json
+./ip2as.prefixes
+./rir.files
+./rir.prefixes
