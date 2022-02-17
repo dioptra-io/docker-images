@@ -4,6 +4,7 @@
 
 This repository contains Docker images for various external utilities.
 
-To add an image, create a folder with the name of the image and a `Dockerfile` inside it,
-then add the image name to the build matrix of the `docker.yml` workflow.
-The image will be published at `ghcr.io/dioptra-io/docker-images/image-name:main`.
+To add an image name `my-image`:
+- Create `my-image/Dockerfile`
+- Add `my-image` to the build matrix of the [`docker.yml`](.github/workflows/docker.yml) workflow
+- The image will be available at `ghcr.io/dioptra-io/docker-images/my-image:main`
