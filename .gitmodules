@@ -1,0 +1,6 @@
+[submodule "flashroute/FlashRoute"]
+	path = flashroute/FlashRoute
+	url = https://github.com/lambdahuang/FlashRoute
+[submodule "chproxy/chproxy"]
+	path = chproxy/chproxy
+	url = https://github.com/maxmouchet/chproxy.git
