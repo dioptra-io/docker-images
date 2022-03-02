@@ -13,3 +13,6 @@
 [submodule "ipv4-heatmap/ipv4-heatmap"]
 	path = ipv4-heatmap/ipv4-heatmap
 	url = git@github.com:measurement-factory/ipv4-heatmap.git
+[submodule "tippecanoe/tippecanoe"]
+	path = tippecanoe/tippecanoe
+	url = git@github.com:mapbox/tippecanoe.git
