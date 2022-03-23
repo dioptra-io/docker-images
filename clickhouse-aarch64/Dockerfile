@@ -8,7 +8,7 @@ RUN apt-get update && \
         ca-certificates curl gosu wget zstd && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl -L https://github.com/dioptra-io/clickhouse-builds/releases/download/20211210/clickhouse.$(arch).zst | zstd -d > /usr/bin/clickhouse && \
+RUN curl -L https://github.com/dioptra-io/clickhouse-builds/releases/download/20220323/clickhouse.$(arch).zst | zstd -d > /usr/bin/clickhouse && \
     chmod +x /usr/bin/clickhouse && \
     ln -s /usr/bin/clickhouse /usr/bin/clickhouse-client && \
     ln -s /usr/bin/clickhouse /usr/bin/clickhouse-server
