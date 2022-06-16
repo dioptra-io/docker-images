@@ -1,4 +1,4 @@
-FROM fedora:24 as builder
+FROM fedora:24
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN dnf install -y \
