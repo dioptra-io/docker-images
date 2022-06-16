@@ -2,9 +2,9 @@ name: Docker
 
 on:
   push:
-    paths-ignore: [ '**.md' ]
+    paths-ignore: ["**.md"]
   pull_request:
-    paths-ignore: [ '**.md' ]
+    paths-ignore: ["**.md"]
 
 jobs:
   build:
@@ -24,6 +24,8 @@ jobs:
           - image: "ipv4-heatmap"
             platforms: linux/amd64,linux/arm64
           - image: "tippecanoe"
+            platforms: linux/amd64,linux/arm64
+          - image: "tracebox"
             platforms: linux/amd64,linux/arm64
     steps:
       - uses: actions/checkout@v2
