@@ -15,8 +15,6 @@ jobs:
         include:
           - image: "bdrmapit"
             platforms: linux/amd64,linux/arm64
-          - image: "chproxy"
-            platforms: linux/amd64,linux/arm64
           - image: "flashroute"
             platforms: linux/amd64
           - image: "ipv4-heatmap"
