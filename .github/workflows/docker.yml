@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - uses: dioptra-io/publish-docker-action@v1.3
+      - uses: dioptra-io/publish-docker-action@v1
         with:
           context: ${{ matrix.image }}
           file: ${{ matrix.image }}/Dockerfile
