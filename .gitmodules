@@ -16,3 +16,6 @@
 [submodule "tippecanoe/tippecanoe"]
 	path = tippecanoe/tippecanoe
 	url = git@github.com:mapbox/tippecanoe.git
+[submodule "tnt/scamper"]
+	path = tnt/scamper
+	url = git@github.com:maxmouchet/scamper.git
