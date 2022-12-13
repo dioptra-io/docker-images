@@ -1,0 +1,8 @@
+services:
+  scamper:
+    build: .
+    command: scamper -P 9999
+  tnt:
+    build: .
+    command: tail -f /dev/null
+    network_mode: service:scamper
